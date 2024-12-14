@@ -9,9 +9,9 @@
     left: 0;
     right: 0;
     background-color: white;
-    box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.4);
-    border-bottom-left-radius: 15px;
+    box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.3);
     border-bottom-right-radius: 15px;
+    z-index: 1;
 }
 
 .left-section
@@ -19,13 +19,14 @@
     display: flex;
     align-items: center;
     margin-right: 80px;
+    margin-left: 20px;
 }
 
 .hamburger-menu
 {
     width: 38px;
     margin-left: 20px;
-    margin-right: 24px;
+    margin-right: 35px;
 }
 
 .youtube-logo
@@ -91,6 +92,51 @@
     margin-right: 8px;
 }
 
+.search-button,
+.voice-button,
+.upload-icon-container,
+.apps-icon-container,
+.notifications-icon-container,
+.user-picture
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.voice-button .tooltip,
+.search-button .tooltip,
+.upload-icon-container .tooltip,
+.apps-icon-container .tooltip,
+.notifications-icon-container .tooltip,
+.user-picture-container .tooltip
+{
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    font-family: Roboto, Arial;
+    font-size: 18px;
+    bottom: -35px;
+    opacity: 0;
+    transition: opacity 0.25s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.voice-button:hover .tooltip,
+.search-button:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.apps-icon-container:hover .tooltip,
+.notifications-icon-container:hover .tooltip,
+.user-picture-container:hover .tooltip
+{
+    opacity: 1;
+}
+
 .right-section
 {
     width: 300px;
@@ -101,19 +147,34 @@
     flex-shrink: 0;
 }
 
-.upload-icon
-{
-    height: 54px;
-}
-
-.apps-icon
-{
-    height: 54px;
-}
-
+.upload-icon,
+.apps-icon,
 .notifications-icon
 {
-    height: 54px;
+    height: 44px;
+}
+
+
+
+.notifications-icon-container
+{
+    position: relative;
+}
+
+.notification-count
+{
+    position: absolute;
+    top: 0;
+    right: -4px;
+    background-color: red;
+    color: white;
+    font-family: Roboto, Arial;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 15px;
 }
 
 .user-picture

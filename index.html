@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="video.css">
         <link rel="stylesheet" href="general.css">
         <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="sidebar.css">
     </head>
 
     <body>
@@ -24,14 +25,48 @@
             <div class="middle-section">
                 <!--Search bar-->
                 <input class="search-bar" type="text" placeholder="Search">
-                <button class="search-button"><img class="search-icon" src="Images/Icons/search.svg"></button>
-                <button class="voice-button"><img class="voice-icon" src="Images/Icons/voice-search-icon.svg"></button>
+                <button class="search-button">
+                    <img class="search-icon" src="Images/Icons/search.svg"><div class="tooltip">Search</div>
+                </button>
+                <button class="voice-button">
+                    <img class="voice-icon" src="Images/Icons/voice-search-icon.svg"><div class="tooltip">Recor your voice</div>
+                </button>
             </div>
             <div class="right-section">
-                <img class="upload-icon" src="Images/Icons/upload.svg">
-                <img class="apps-icon" src="Images/Icons/youtube-apps.svg">
-                <img class="notifications-icon" src="Images/Icons/notifications.svg">
-                <img class="user-picture" src="Images/profiles/yasin.jpg">
+                <div class="upload-icon-container">
+                    <img class="upload-icon" src="Images/Icons/upload.svg"><div class="tooltip">Upload your video</div>
+                </div>
+                <div class="apps-icon-container">
+                    <img class="apps-icon" src="Images/Icons/youtube-apps.svg"><div class="tooltip">Youtube Apps</div>
+                </div>
+                <div class="notifications-icon-container"><div class="tooltip">Notifications</div>
+                    <img class="notifications-icon" src="Images/Icons/notifications.svg">
+                    <div class="notification-count">3</div>
+                </div>
+                <div class="user-picture-container">
+                    <img class="user-picture" src="Images/profiles/yasin.jpg"><div class="tooltip">User Profile</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="sidebar-link">
+                <img src="Images/Icons/home.svg"><div>Home</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="Images/Icons/explore.svg"><div>Explore</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="Images/Icons/subscriptions.svg"><div>Subscriptions</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="Images/Icons/originals.svg"><div>Originals</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="Images/Icons/youtube-music.svg"><div>Music</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="Images/Icons/library.svg"><div>Library</div>
             </div>
         </div>
 
@@ -42,6 +77,7 @@
                 <!--thumbnail-->
                 <div class="thumbnail-row">
                     <img class="thumbnail" src="Images/thumbnails/backend.jpg">
+                    <div class="video-time">14:20</div>
                 </div>
 
                 <!--Video Info-->
@@ -69,6 +105,7 @@
                 <!--thumbnail-->
                 <div class="thumbnail-row">
                     <img class="thumbnail" src="Images/thumbnails/bitcoin.jpg">
+                    <div class="video-time">12:34</div>
                 </div>
 
                 <!--Video Info-->
@@ -96,6 +133,7 @@
                 <!--thumbnail-->
                 <div class="thumbnail-row">
                     <img class="thumbnail" src="Images/thumbnails/cold walet.jpg">
+                    <div class="video-time">22:04</div>
                 </div>
 
                 <!--Video Info-->
@@ -123,6 +161,7 @@
                 <!--thumbnail-->
                 <div class="thumbnail-row">
                     <img class="thumbnail" src="Images/thumbnails/got talent.jpg">
+                    <div class="video-time">8:10</div>
                 </div>
 
                 <!--Video Info-->
@@ -150,6 +189,7 @@
                 <!--thumbnail-->
                 <div class="thumbnail-row">
                     <img class="thumbnail" src="Images/thumbnails/iterstellar.jpg">
+                    <div class="video-time">12:58</div>
                 </div>
 
                 <!--Video Info-->
@@ -177,6 +217,7 @@
                 <!--thumbnail-->
                 <div class="thumbnail-row">
                     <img class="thumbnail" src="Images/thumbnails/last of us 2.jpg">
+                    <div class="video-time">12:31:26</div>
                 </div>
 
                 <!--Video Info-->
@@ -204,6 +245,7 @@
                 <!--thumbnail-->
                 <div class="thumbnail-row">
                     <img class="thumbnail" src="Images/thumbnails/last of us.jpg">
+                    <div class="video-time">28:40</div>
                 </div>
 
                 <!--Video Info-->
@@ -231,6 +273,7 @@
                 <!--thumbnail-->
                 <div class="thumbnail-row">
                     <img class="thumbnail" src="Images/thumbnails/metamask.jpg">
+                    <div class="video-time">10:20</div>
                 </div>
 
                 <!--Video Info-->
@@ -258,6 +301,7 @@
                 <!--thumbnail-->
                 <div class="thumbnail-row">
                     <img class="thumbnail" src="Images/thumbnails/program.jpg">
+                    <div class="video-time">16:33</div>
                 </div>
 
                 <!--Video Info-->
@@ -285,6 +329,7 @@
                 <!--thumbnail-->
                 <div class="thumbnail-row">
                     <img class="thumbnail" src="Images/thumbnails/singer.jpg">
+                    <div class="video-time">21:04</div>
                 </div>
 
                 <!--Video Info-->
@@ -312,6 +357,7 @@
                 <!--thumbnail-->
                 <div class="thumbnail-row">
                     <img class="thumbnail" src="Images/thumbnails/yasin.jpg">
+                    <div class="video-time">01:14:20</div>
                 </div>
 
                 <!--Video Info-->
@@ -339,6 +385,7 @@
                 <!--thumbnail-->
                 <div class="thumbnail-row">
                     <img class="thumbnail" src="Images/thumbnails/bitcoin.jpg">
+                    <div class="video-time">12:34</div>
                 </div>
 
                 <!--Video Info-->
