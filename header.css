@@ -97,7 +97,7 @@
 .upload-icon-container,
 .apps-icon-container,
 .notifications-icon-container,
-.user-picture
+.user-picture-container
 {
     display: flex;
     justify-content: center;
@@ -154,7 +154,11 @@
     height: 44px;
 }
 
-
+.user-picture
+{
+    height: 54px;
+    border-radius: 50px;
+}
 
 .notifications-icon-container
 {
@@ -177,8 +181,3 @@
     border-radius: 15px;
 }
 
-.user-picture
-{
-    height: 54px;
-    border-radius: 50px;
-}
