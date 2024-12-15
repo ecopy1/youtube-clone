@@ -2,8 +2,42 @@
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 16px;
+    column-gap: 20px;
     row-gap: 38px;
+}
+
+@media (width< 700px)
+{
+    .video-grid
+    {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (width > 700px)
+{
+    .video-grid
+    {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (width> 1100px)
+{
+    .video-grid
+    {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (width> 1600px)
+{
+    .video-grid
+    {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
 
 .thumbnail
